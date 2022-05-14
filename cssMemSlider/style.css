@@ -86,14 +86,16 @@ input[type="radio"] {
 #btn-1:checked ~ .control-btns > .label_1 .label-content,
 #btn-2:checked ~ .control-btns > .label_2 .label-content,
 #btn-3:checked ~ .control-btns > .label_3 .label-content,
-#btn-4:checked ~ .control-btns > .label_4 .label-content {
+#btn-4:checked ~ .control-btns > .label_4 .label-content,
+#btn-5:checked ~ .control-btns > .label_5 .label-content {
     background-color: transparent;
 }
 
 #btn-1:checked ~ .control-btns > .label_1:hover,
 #btn-2:checked ~ .control-btns > .label_2:hover,
 #btn-3:checked ~ .control-btns > .label_3:hover,
-#btn-4:checked ~ .control-btns > .label_4:hover {
+#btn-4:checked ~ .control-btns > .label_4:hover,
+#btn-5:checked ~ .control-btns > .label_5:hover {
     background-color: transparent;
 }
 
@@ -103,6 +105,8 @@ input[type="radio"] {
 }
 
 /* Controls styles end */
+
+/* Slider styles start */
 
 #btn-1:checked ~ .slider > .slider__container {
     transform: translateX(0);
@@ -120,12 +124,16 @@ input[type="radio"] {
     transform: translateX(-270vw);
 }
 
+#btn-5:checked ~ .slider > .slider__container {
+    transform: translateX(-360vw);
+}
+
 .slider {
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0 0 1rem 1rem #AF4425;
     width: 90vw;
-    height: 40vw;
+    height: 52vw;
     margin-bottom: 2rem;
 }
 
@@ -136,7 +144,7 @@ input[type="radio"] {
 
 .mem {
     min-width: 90vw;
-    height: 40vw;
+    height: 52vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,17 +152,22 @@ input[type="radio"] {
 }
 
 .mem_1 {
-    background-color: orange;
+    background: no-repeat center/cover url("./assets/img/memes/meme-1.jpg");
 }
 .mem_2 {
-    background-color: orangered;
+    background: no-repeat center/cover url("./assets/img/memes/meme-2.jpg");
 }
 .mem_3 {
-    background-color: orchid;
+    background: no-repeat center/cover url("./assets/img/memes/meme-3.jpg");
 }
 .mem_4 {
-    background-color: olive;
+    background: no-repeat center/cover url("./assets/img/memes/meme-4.jpg");
 }
+.mem_5 {
+    background: no-repeat center/cover url("./assets/img/memes/meme-5.jpg");
+}
+
+/* Slider styles end */
 
 /* Footer styles start */
 
