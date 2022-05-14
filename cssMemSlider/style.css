@@ -21,7 +21,7 @@ a:hover, a:focus {
     outline: none;
 }
 
-h1 {
+h1, h2 {
     margin: 0;
 }
 
@@ -38,7 +38,9 @@ h1 {
 }
 
 .main .wrapper {
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    column-gap: calc(90vw - 40vw - 17.5rem);
 }
 
 /* Common styles end */
@@ -47,12 +49,12 @@ h1 {
 
 input[type="radio"] {
     visibility: hidden;
-    width: 0;
+/*     width: 0; */
     height: 0;
 }
 
 .control-btns {
-    width: 14rem;
+    width: 17.5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -108,27 +110,56 @@ input[type="radio"] {
 
 /* Slider styles start */
 
-#btn-1:checked ~ .slider > .slider__container {
-    transform: translateX(0);
-}
+    /* Sider scroll start */
 
-#btn-2:checked ~ .slider > .slider__container {
-    transform: translateX(-90vw);
-}
+    #btn-1:checked ~ .slider > .slider__container {
+        transform: translateX(0);
+    }
 
-#btn-3:checked ~ .slider > .slider__container {
-    transform: translateX(-180vw);
-}
+    #btn-2:checked ~ .slider > .slider__container {
+        transform: translateX(-90vw);
+    }
 
-#btn-4:checked ~ .slider > .slider__container {
-    transform: translateX(-270vw);
-}
+    #btn-3:checked ~ .slider > .slider__container {
+        transform: translateX(-180vw);
+    }
 
-#btn-5:checked ~ .slider > .slider__container {
-    transform: translateX(-360vw);
-}
+    #btn-4:checked ~ .slider > .slider__container {
+        transform: translateX(-270vw);
+    }
+
+    #btn-5:checked ~ .slider > .slider__container {
+        transform: translateX(-360vw);
+    }
+
+    /* Slider scroll end */
+
+    /* Title scroll start */
+
+    #btn-1:checked ~ .mem-titles > .mem-titles__container {
+        transform: translateX(0);
+    }
+    
+    #btn-2:checked ~ .mem-titles > .mem-titles__container {
+        transform: translateX(-40vw);
+    }
+    
+    #btn-3:checked ~ .mem-titles > .mem-titles__container {
+        transform: translateX(-80vw);
+    }
+    
+    #btn-4:checked ~ .mem-titles > .mem-titles__container {
+        transform: translateX(-120vw);
+    }
+    
+    #btn-5:checked ~ .mem-titles > .mem-titles__container {
+        transform: translateX(-160vw);
+    }
+
+    /* Title scroll end */
 
 .slider {
+/*     flex-shrink: 0; */
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0 0 1rem 1rem #AF4425;
@@ -165,6 +196,22 @@ input[type="radio"] {
 }
 .mem_5 {
     background: no-repeat center/cover url("./assets/img/memes/meme-5.jpg");
+}
+
+.mem-titles {
+    overflow: hidden;
+    width: 40vw;
+}
+
+.mem-titles__container {
+    display: flex;
+    transition: 1s ease-in-out;
+}
+
+
+.mem-title {
+    min-width: 100%;
+    font-size: 1.5rem;
 }
 
 /* Slider styles end */
