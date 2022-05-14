@@ -1,1 +1,171 @@
-/* Styles */
+/* Common styles start */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C9A66B;
+    margin: 0;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+}
+
+a:hover, a:focus {
+    color: #AF4425;
+    outline: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+.wrapper {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .wrapper {
+    justify-content: space-between;
+}
+
+.main .wrapper {
+    flex-direction: column;
+}
+
+/* Common styles end */
+
+/* Controls styles start */
+
+input[type="radio"] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.control-btns {
+    width: 14rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    border: 1rem solid #C9A66B;
+    border-radius: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.label-content {
+    border: 0.3rem solid #AF4425;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #AF4425;
+    transition: 0.4s ease-in-out;
+}
+
+.label:hover {
+    cursor: pointer;
+    background-color: #662E1C;
+}
+
+.label:hover .label-content {
+    cursor: pointer;
+    border-color: #662E1C;
+    background-color: #662E1C;
+}
+
+#btn-1:checked ~ .control-btns > .label_1 .label-content,
+#btn-2:checked ~ .control-btns > .label_2 .label-content,
+#btn-3:checked ~ .control-btns > .label_3 .label-content,
+#btn-4:checked ~ .control-btns > .label_4 .label-content {
+    background-color: transparent;
+}
+
+#btn-1:checked ~ .control-btns > .label_1:hover,
+#btn-2:checked ~ .control-btns > .label_2:hover,
+#btn-3:checked ~ .control-btns > .label_3:hover,
+#btn-4:checked ~ .control-btns > .label_4:hover {
+    background-color: transparent;
+}
+
+.label:active .label-content {
+    background-color: #EBDCB2;    
+    transition: 0.4ms ease-in-out;
+}
+
+/* Controls styles end */
+
+#btn-1:checked ~ .slider > .slider__container {
+    transform: translateX(0);
+}
+
+#btn-2:checked ~ .slider > .slider__container {
+    transform: translateX(-90vw);
+}
+
+#btn-3:checked ~ .slider > .slider__container {
+    transform: translateX(-180vw);
+}
+
+#btn-4:checked ~ .slider > .slider__container {
+    transform: translateX(-270vw);
+}
+
+.slider {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 1rem #AF4425;
+    width: 90vw;
+    height: 40vw;
+    margin-bottom: 2rem;
+}
+
+.slider__container {
+    display: flex;
+    transition: 1s ease-in-out;
+}
+
+.mem {
+    min-width: 90vw;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+.mem_1 {
+    background-color: orange;
+}
+.mem_2 {
+    background-color: orangered;
+}
+.mem_3 {
+    background-color: orchid;
+}
+.mem_4 {
+    background-color: olive;
+}
+
+/* Footer styles start */
+
+.rsschool-logo {
+    width: 6.25rem;
+    height: 2.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.rsschool-logo:hover {
+    filter: invert(26%) sepia(90%) saturate(1026%) hue-rotate(342deg) brightness(98%) contrast(90%);
+}
+
+/* Footer styles end */
