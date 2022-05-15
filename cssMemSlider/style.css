@@ -26,7 +26,7 @@ h1, h2 {
 }
 
 .wrapper {
-    padding: 1.25rem;
+    padding: 1rem 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +164,7 @@ input[type="radio"] {
     border-radius: 1rem;
     box-shadow: 0 0 1rem 1rem #AF4425;
     width: 90vw;
-    height: 52vw;
+    height: 30vw;
     margin-bottom: 2rem;
 }
 
@@ -175,7 +175,7 @@ input[type="radio"] {
 
 .mem {
     min-width: 90vw;
-    height: 52vw;
+    height: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,3 +229,7 @@ input[type="radio"] {
 }
 
 /* Footer styles end */
+
+@media screen and (max-width: 559px) {
+    
+}
