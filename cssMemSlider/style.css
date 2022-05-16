@@ -212,6 +212,7 @@ input[type="radio"] {
 
 .mem-titles__container {
     display: flex;
+    align-items: center;
     transition: 1s ease-in-out;
 }
 
