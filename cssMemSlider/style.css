@@ -190,19 +190,19 @@ input[type="radio"] {
 }
 
 .mem_1 {
-    background: no-repeat center/cover url("./assets/img/memes/meme-1.jpg");
+    background: no-repeat center/cover url("./assets/img/memes/desctop/meme-1.jpg");
 }
 .mem_2 {
-    background: no-repeat center/cover url("./assets/img/memes/meme-2.jpg");
+    background: no-repeat center/cover url("./assets/img/memes/desctop/meme-2.jpg");
 }
 .mem_3 {
-    background: no-repeat center/cover url("./assets/img/memes/meme-3.jpg");
+    background: no-repeat center/cover url("./assets/img/memes/desctop/meme-3.jpg");
 }
 .mem_4 {
-    background: no-repeat center/cover url("./assets/img/memes/meme-4.jpg");
+    background: no-repeat center/cover url("./assets/img/memes/desctop/meme-4.jpg");
 }
 .mem_5 {
-    background: no-repeat center/cover url("./assets/img/memes/meme-5.jpg");
+    background: no-repeat center/cover url("./assets/img/memes/desctop/meme-5.jpg");
 }
 
 .mem-titles {
@@ -247,6 +247,30 @@ input[type="radio"] {
     /* Controls styles end */
 
     /* Slider styles start */
+
+    .slider {
+        height: 50vw;
+    }
+
+    .mem {
+        height: 50vw;
+    }
+        
+    .mem_1 {
+        background: no-repeat center/cover url("./assets/img/memes/mobile/meme-1.jpg");
+    }
+    .mem_2 {
+        background: no-repeat center/cover url("./assets/img/memes/mobile/meme-2.jpg");
+    }
+    .mem_3 {
+        background: no-repeat center/cover url("./assets/img/memes/mobile/meme-3.jpg");
+    }
+    .mem_4 {
+        background: no-repeat center/cover url("./assets/img/memes/mobile/meme-4.jpg");
+    }
+    .mem_5 {
+        background: no-repeat center/cover url("./assets/img/memes/mobile/meme-5.jpg");
+    }
 
     .mem-titles {
         width: 90vw;
